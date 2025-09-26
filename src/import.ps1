@@ -1,21 +1,22 @@
 # import_all.ps1
-# Navigate to the project root
-Set-Location "C:\Users\Sara\txc2025\src"
+# Runs orchestrate imports for tools and agents
+
+# Get the folder where this script lives
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+
+# Change to the project root (same folder as this script)
+Set-Location $ScriptDir
 
 Write-Host "=== Importing tools ==="
-# Loop through all Python files in ./tools
 Get-ChildItem -Path "./tools" -Filter *.py | ForEach-Object {
-    $toolPath = $_.FullName
-    Write-Host "Importing tool: $toolPath"
-    orchestrate tools import -k python -f $toolPath
+    Write-Host "Importing tool: $($_.Name)"
+    orchestrate tools import -k python -f $_.FullName
 }
 
 Write-Host "`n=== Importing agents ==="
-# Loop through all YAML files in ./agents
 Get-ChildItem -Path "./agents" -Filter *.yaml | ForEach-Object {
-    $agentPath = $_.FullName
-    Write-Host "Importing agent: $agentPath"
-    orchestrate agents import -f $agentPath
+    Write-Host "Importing agent: $($_.Name)"
+    orchestrate agents import -f $_.FullName
 }
 
 Write-Host "`n=== Import completed ==="
