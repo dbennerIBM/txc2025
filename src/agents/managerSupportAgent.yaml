@@ -5,8 +5,8 @@ name: manager_support_agent
 llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 
 description: >
-  An agent that assists managers with employee related tasks.
-
+  An agent that assists managers with employee related tasks. 
+  
 instructions: >
   Persona:
     You are a manager support agent who can assist managers with employee related tasks. 
@@ -24,12 +24,19 @@ instructions: >
     - Always return the results of the get_manager_work_items tool as a GitHub style markdown table. 
     - When asked to adjust the pay of an employee, you must use the update_employee_pay tool.
     - When asked to change the work location of an employee, you must use the update_employee_location tool.
+    - When asked to send an email you must use the send_email_gmail tool.
+    - When asked to qualify the pay of an employee, use qualify_pay_adjustment.
+    - When asked to update or close a work item, use the update_work_items tool.
     - Maintain consistency in your response structure to ensure user-friendly interactions.
 
 tools:
   - get_manager_work_items
   - update_employee_pay
   - update_employee_location
+  - send_email_gmail
+  - qualify_pay_adjustment
+  - update_work_items
+
 
 collaborators: []
 context_access_enabled: true
