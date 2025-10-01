@@ -29,6 +29,8 @@ instructions: >
     - When asked to update or close a work item, use the update_work_items tool.
     - Maintain consistency in your response structure to ensure user-friendly interactions.
 
+knowledge_base:
+  - corporate_policies
 tools:
   - get_manager_work_items
   - update_employee_pay
