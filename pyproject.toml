@@ -5,5 +5,5 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "ibm-watsonx-orchestrate>=1.11.1",
+    "ibm-watsonx-orchestrate>=1.12.1",
 ]
