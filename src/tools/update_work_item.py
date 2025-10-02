@@ -17,7 +17,7 @@ def update_work_items(employee_name: str, work_item_id: str, status: str, notes:
         dict: Response simulating a backend API response
     """
     # Simulated fake update success/failure
-    success = random.choice([True, True, False])  # more likely to succeed than fail
+    success = random.choice([True, True])  # more likely to succeed than fail
 
     return {
         "message": (
