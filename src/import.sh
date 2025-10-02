@@ -8,8 +8,8 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Go to project root
 cd "$SCRIPT_DIR" || exit 1
 
-echo "=== Activating local environment ==="
-orchestrate env activate local
+# echo "=== Activating local environment ==="
+# orchestrate env activate local
 
 echo "=== Importing tools ==="
 for tool in ./tools/*.py; do
