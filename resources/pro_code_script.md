@@ -47,9 +47,9 @@ show me my work items
 
 update work item for [employee name] to in progress
 
-what are the details for an office relocation to Austin?
+what are the details for an office relocation to San Francisco?
 
-go ahead and update [employee name] work location to Austin, TX
+go ahead and update [employee name] work location to San Francisco, CA
 
 update the pay for [employee name]
 
