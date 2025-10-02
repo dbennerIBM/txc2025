@@ -26,17 +26,37 @@ I want to first show you the story of what the AI agent is doing for our manager
 
 Let’s imagine you are a manager. You will be using your AI agent to promote an employee to a new role in a new city.
 
-Show the picture of the 7 steps - Here is the overview of what our manager will do with the agent
+Here is the overview of what our manager will do with the agent
+
+![manager agent tools and knowledge](manager_agent_diagram.png)
 
 1.  Get a list of his daily work items. Pick the employee promotion task
-2.  Adjust employee’s pay
-3.  Update the employee’s work location
-4.  Qualify the employee’s pay adjustment
-5.  Look up guidelines on pay adjustments
-6.  Close work item
-7.  Notify employee via email that she has been promoted to a new role in a new city
+2.  Look up guidelines on pay adjustments
+3.  Adjust employee’s pay
+4.  Update the employee’s work location
+5.  Qualify the employee’s pay adjustment 
+6.  Notify employee via email that she has been promoted to a new role in a new city
+7. Close work item
 
-Now let’s see the demo in action
+### Now let’s see the demo in action
+
+Open browser to Developer Edition local server and start chat with the manager_support_agent and follow these prompts:
+
+```text
+show me my work items
+
+update work item for [employee name] to in progress
+
+what are the details for an office relocation to Austin?
+
+go ahead and update [employee name] work location to Austin, TX
+
+update the pay for [employee name]
+
+send email 
+
+close work items for [employee name]
+```
 
 Run the steps in sequence
 
