@@ -811,7 +811,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "ibm-watsonx-orchestrate", specifier = ">=1.12" }]
+requires-dist = [{ name = "ibm-watsonx-orchestrate", specifier = ">=1.12.1" }]
 
 [[package]]
 name = "typer"
