@@ -5,8 +5,8 @@ description: >
   This knowledge base contains information on company HR policies.
 #Below, you can change the path to your file that is being uploaded into the knowledge base. You can also upload multiple files at a time. You may need to change this to the full path of your file if Orchestrate can not find this.
 documents:
-  - /Users/danielbenner/IBM/python/txc2025/resources/IBM_Relocation_Policy_Eligibility_Criteria.docx
-  - /Users/danielbenner/IBM/python/txc2025/resources/Returning_to_the_IBM_Office.docx
+  - /Users/danielbenner/IBM/python/txc2025/resources/relocation_policy_eligibility.md
+  - /Users/danielbenner/IBM/python/txc2025/resources/return_to_the_office.md
 #Below, you can change a few model parameters such as the embedding model and the chunk size/overlap.
 vector_index:
   embedding_model_name: virtual-model/openai/text-embedding-3-small
